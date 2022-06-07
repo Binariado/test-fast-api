@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 
-from pdfapi.v1.generate import generate
+from ...pdfapi.v1.generate import generate
 
 router = APIRouter(prefix="/api/v1/user")
 
@@ -9,4 +9,3 @@ router = APIRouter(prefix="/api/v1/user")
 async def root():
     # generate()
     return {"message": "Hello World"}
-
